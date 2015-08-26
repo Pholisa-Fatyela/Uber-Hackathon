@@ -43,7 +43,7 @@
 
 .formBtn:hover {
   	background: #00927e; /* tab color Riverside Green */
-	cursor: pointer; 
+	cursor: pointer;
 }
 
 /* APPOINTMENT FORM */
@@ -59,9 +59,9 @@
 }
 
 .apptform li{
-	padding: 4px; 
+	padding: 4px;
 	position: relative;
-} 
+}
 
 .appointment-setup {
 	margin-left: 200px;
@@ -85,50 +85,50 @@
   }
 
 .apptform input[type="text"]{
-	height:20px; 
-	width:220px; 
+	height:20px;
+	width:220px;
 }
 
 .apptform input[type="text"]#apptReason{
-	height:20px; 
-	width:605px; 
+	height:20px;
+	width:605px;
 }
 
 .apptform input[type="checkbox"]{
-	height:20px; 
-	width:20px; 
+	height:20px;
+	width:20px;
 }
 
 .apptform select {
 	appearance: none;
-	height:25px; 
-	width:325px; 
+	height:25px;
+	width:325px;
 }
 
 .apptform select#apptLoclist {
 	appearance: none;
-	height:25px; 
-	width:610px; 
+	height:25px;
+	width:610px;
 }
 
 .apptform textarea{
-	height:50px; 
+	height:50px;
 	width:600px;
 	padding:4px
 }
 
 	/* form element visual styles */
-	.apptform input[type="text"], 
-	.apptform textarea, 	
-	.apptform select { 
+	.apptform input[type="text"],
+	.apptform textarea,
+	.apptform select {
 		border:1px solid #707070;
 	}
-	.apptform input[type="text"]:focus, 
-	.apptform textarea:focus, 
+	.apptform input[type="text"]:focus,
+	.apptform textarea:focus,
 	.apptform select:focus {
-		background: #fff; 
-		border:1px solid #555; 
-		box-shadow: 0 0 3px #aaa; 
+		background: #fff;
+		border:1px solid #555;
+		box-shadow: 0 0 3px #aaa;
 	}
 
 
@@ -156,20 +156,20 @@
 
 
 <ul>
-	
-    
+
+
     <li>
 		<label id="prefnoPref">Scheduling Preference</label>
 		<input type="checkbox" name="NOPREFERENCE" value="No preference for time of day or day of week." id="prefnoPref" />I have no preference.
     </li>
-</ul>    
-    
-    
+</ul>
+
+
   <p><strong>Or select a Preferred Day and Time of Day</strong></p>
 
 	<div id="prefweeks">
     	<label id="prefMon">Day(s) of Week</label>
-    	 
+
 		<input type="checkbox" name="MONDAY" value="Monday" id="prefMon" />Monday
 		<input type="checkbox" name="TUESDAY" value="Tuesday" id="prefTues" />Tuesday
       	<input type="checkbox" name="WEDNESDAY" value="Wednesday" id="prefWed" />Wednesday
@@ -179,24 +179,24 @@
 
 	<div id="prefdays">
     	<label id="prefMorn">Time(s) of Day</label>
-    	 
+
 		<input type="checkbox" name="MORNING" value="Morning" id="prefMorn" />Morning
 		<input type="checkbox" name="EARLYAM" value="Early morning" id="prefEarlyAm" />Early morning
 		<input type="checkbox" name="LATEAM" value="Late morning" id="prefLateMorn" />Late morning
 		<input type="checkbox" name="AFTERNOON" value="Afternoon" id="prefAfternn" />Afternoon
 		<input type="checkbox" name="EARLYPM" value="Early afternoon" id="prefEAfternn" />Early afternoon
 		<input type="checkbox" name="LATEPM" value="Late afternoon" id="prefLAfternn" />Late afternoon
- 
+
     </div><!-- end div prefdays -->
 
 
 	<div id="formBtn">
-		<input type="submit" value="Submit" name="B1" onclick="this.value='Processing Request...';this.disabled='disabled';this.form.submit();" class="formBtn" /> 
+		<input type="submit" value="Submit" name="B1" onclick="this.value='Processing Request...';this.disabled='disabled';this.form.submit();" class="formBtn" />
         <input type="reset" value="Reset" name="B2" class="formBtn" />
     </div>
 
 </form>
 </div>
-{{{body}}}
+
 </body>
 </html>
