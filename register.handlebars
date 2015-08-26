@@ -1,0 +1,79 @@
+<style>
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body {
+  background-color: black;
+  font-family: Lato, Arial;
+  color: #444;
+}
+h3 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.uber {
+  background-color: white;
+  padding: 1em 2em;
+  max-width: 15em;
+  margin: 0 auto;
+  input[type=text], input[type=phonenumber] {
+    width: 14em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    display: block;
+    padding: .5em;
+    margin-bottom: 1em;
+    webkit-appearance: none;
+  }
+  input[type=submit] {
+    display: block;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 1em;
+    webkit-appearance: none;
+    padding: .5em 3em;
+    margin: 1em auto;
+
+  }
+
+  input[type=file] { 
+    width: 1px; 
+    visibility: hidden;
+}
+  
+}
+
+</style>
+<div class="uber">
+  <h3>UBER</h3>
+  <form action="uber" method="POST">
+    
+    <label for="name">Your Name</label>
+    <input id="name" type="text" placeholder="Enter your name"/>
+    <label for="name">Your Surname</label>
+    <input id="name" type="text" placeholder="Enter your surname"/>
+    <label for="name">Your Gender</label>
+    <input id="name" type="text" placeholder="Enter your gender"/>
+     <label for="Id Number"> Id Number</label>
+    <input name="lname" type="phonenumber" placeholder="Enter your id number"/>
+    <label for="Phone Number"> Phone Number</label>
+    <input name="lname" type="phonenumber" placeholder="Enter your phone number"/>
+    <label for="email">Email Address</label>
+    <input id="email" type="text" placeholder="Enter your Email Address"/>
+    <input type="submit" value="Register!"/> <input type="file" id="uploadme" />
+    <input type="button" id="clickme" value="Upload Documents!" />
+  
+</div>
+  
+  <script>
+     $(function(){
+       $('#clickme').click(function(){
+        $('#uploadme').click();
+       });
+     });
+  </script>
+  </form>
