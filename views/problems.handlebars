@@ -3,18 +3,103 @@
   <head>
       <meta charset="utf-8" />
       <title>Uber</title>
+      <style>
+      /*Fonts import*/
+      @import url(http://fonts.googleapis.com/css?family=Oswald);
+      /*/Fonts import*/
+
+      html, body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      background: linear-gradient(60deg, #220e31 10%, #66e8c8 90%);
+      }
+      .checkbox {
+      border-radius: 3px;
+      width: 200px;
+      margin: 0 auto;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0px 15px 30px 15px;
+      margin-top: 50px;
+      background: transparent;
+      font-family: 'Oswald', sans-serif;
+      }
+      .checkbox p {
+      width: 140px;
+      background: transparent;
+      margin: 0;
+      color: #000;
+      text-align: left;
+      margin-top: -12px;
+      padding-bottom: 10px;
+      -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .checkbox input[type=checkbox] {
+        display: none;
+      }
+      .checkbox label:before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+        border-radius: 2px;
+        background-color: #dedede;
+      }
+      .checkbox label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      margin-right: 15px;
+      font-size: 13px;
+      padding: 5px 0px 0 25px;
+      color: #000;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      input[type=checkbox]:checked + label:before {
+        content: "\2713";
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+        font-size: 15px;
+        color: #f3f3f3;
+        text-align: center;
+        line-height: 15px;
+        background-color: #ffd600;
+      }
+      input[type=checkbox]:checked + label {
+      color: #262626;
+      }
+      </style>
   </head>
 
   <body>
-    <h1> What is your problem?</h1>
-    <form>
-      <input type="checkbox" value="male" checked> Male
-      <br>
-      <input type="checkbox" value="female"> Female
-      <br>
-      <input type="checkbox" value="female"> HeShe
-      <br>
-      <input type="submit" value="Submit">
-    </form>
+    <div class="checkbox">
+		<p>What is your problem?</p>
+    	<input id="check1" type="checkbox" name="check" value="check1">
+   		<label for="check1">Accounts</label>
+    	<br>
+    	<input id="check2" type="checkbox" name="check" value="check2">
+    	<label for="check2">Device</label>
+    	<br>
+    	<input id="check3" type="checkbox" name="check" value="check3">
+    	<label for="check3">How to use Uber</label>
+    	<br>
+    	<input id="check4" type="checkbox" name="check" value="check4">
+    	<label for="check4">Payment</label>
+    	<br>
+      <input id="check5" type="checkbox" name="check" value="vehicle">
+    	<label for="check5">Vehicle</label>
+    	<br>
+      <input type="submit">
+    	<br>
+	</div>
   </body>
 </html>
