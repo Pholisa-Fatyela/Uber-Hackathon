@@ -11,17 +11,18 @@
 			color: white;
 			border: 0px solid white;
 			background: black;
-			opacity: 0.6;
+			opacity: 0.5;
 	}
 		body{
-			background: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5Rtn_YlXHisoIbwlqUZnG60-VaS8dW1wQxSPDI-lRC713118LUA");
-			background-size: cover;
+			background: #328c71;
+			opacity: 0.6;
 		}
 		p {
-			color: black;
+			color: white;
 			font-size: 60px;
 			text-align: center;
 		}
+
 		#one {
 			max-width: 100%;
 			position: absolute;
@@ -65,10 +66,10 @@
 			padding: 1em 2em;
 			margin: 0 auto 3rem;
 			border-radius: 0.5em;
-			background: ;
-			border-top: 0px solid white;
-			border-right: 0px solid white;
-			border-left: 0px solid white;
+			background: #3BA686;
+			border-top: 2px solid #52c2a0;
+			border-right: 2px solid #42b995;
+			border-left: 2px solid #65c8ab;
 			border-bottom: 1px solid #9edcca;
 			top: 0;
 		}
@@ -90,11 +91,14 @@
 			z-index: -1;
 			will-change: top background-color;
 			border-radius: 0.5em;
-			background: #1FBAD6;
+			background: #328c71;
 			border-left: 1px solid #65c8ab;
 			border-bottom: 3px solid #205b49;
 			border-right: 1px solid #276e58;
 			box-shadow: rgba(0, 0, 0, 0.55) 0px 0.25rem 10px;
+		}
+		button:hover {
+			background: #3caa89;
 		}
 		button:active {
 			color: #3b3137;
@@ -112,8 +116,9 @@
 <body>
 	<header><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0CX2yoTQCCvy6WQAwfbeFllunzakbNHqw77XHmA6_JUF4_ERo_g"/></header>
 	<p>Welcome to Uber Help Platform</p>
+	
 	<button id="one" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="appointment.handlebars">Are you a driver and you have a problem?</button>
-	<button id="two" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">You want to be an uber driver?</button>
+	<a href="page"><button id="two" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">You want to be an uber driver?</button></a>
 
 	{{{body}}}
 
