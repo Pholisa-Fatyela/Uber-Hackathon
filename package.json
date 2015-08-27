@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Pholisa-Fatyela/Uber-Hackathon/issues"
   },
-  "homepage": "https://github.com/Pholisa-Fatyela/Uber-Hackathon#readme"
+  "homepage": "https://github.com/Pholisa-Fatyela/Uber-Hackathon#readme",
+  "dependencies": {
+    "express": "~4.13.3"
+  }
 }
