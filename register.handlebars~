@@ -89,6 +89,8 @@ button:focus {
 		  <input type="text" id="name">
 		  <label for="surname">Surname</label>
 		  <input type="text" id="surname">
+		  <label for="gender">Gender</label>
+		  <input type="text" id="gender">
 		  <label for="idno">Id Number</label>
 		  <input type="text" id="idno">
 		  <label for="email">Email</label>

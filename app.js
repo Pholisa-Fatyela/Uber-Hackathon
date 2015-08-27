@@ -17,6 +17,9 @@ app.get('/', function (req, res) {
 app.get('/appointment', function (req, res){
 	res.render('appointment', {layout: false});
 });
+app.get('/buttons', function (req, res){
+	res.render('buttons', {layout: false});
+});
 <<<<<<< HEAD
 
 
