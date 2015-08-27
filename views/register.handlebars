@@ -1,7 +1,14 @@
+<head>
+  <title>Uber</title>
 <style>
 @import url(http://fonts.googleapis.com/css?family=Play:400,700);
 
 * { box-sizing: border-box; }
+
+body {
+  background: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5Rtn_YlXHisoIbwlqUZnG60-VaS8dW1wQxSPDI-lRC713118LUA");
+  background-size: cover;
+}
 
 form {
   width: 450px;
@@ -10,6 +17,7 @@ form {
   margin: 0 auto;
   border: 1px solid black;
   border-radius: 15px;
+
 }
 
 input, button {
@@ -28,9 +36,9 @@ form h1 img {
 }
 
 input {
-  background: #1FBAD6;
+  background: white;
   border: none;
-  color: #819CFF;
+  color: black;
   font-size: 1.125em;
   padding: 5px;
   margin: 20px auto;
@@ -81,6 +89,8 @@ button:focus {
 }
 
 </style>
+</head>
+<body>
 <form action="appointment" METHOD="GET" enctype=multipart/form-data >
 
   <h1><img src="img.png" ></img></h1>
@@ -101,7 +111,7 @@ button:focus {
 		  <button>Upload!</button>
      	<button onclick="myFunction()">Register</button>
 </form>
-
+</body>
   <script>
      $(function(){
        $('#clickme').click(function(){

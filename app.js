@@ -1,6 +1,6 @@
 var express = require('express'),
     exphbs  = require('express-handlebars'),
-    mysql = require('mysql'), 
+    mysql = require('mysql'),
     myConnection = require('express-myconnection'),
     bodyParser = require('body-parser'),
     partners = require('./routes/partners');
@@ -12,7 +12,7 @@ var app = express();
 var dbOptions = {
       host: 'localhost',
       user: 'root',
-      password: 'linokuhlekamva',
+      password: 'coder123',
       port: 3306,
       database: 'UberHackathon'
 };

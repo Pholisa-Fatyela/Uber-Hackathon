@@ -12,7 +12,8 @@
       padding: 0;
       margin: 0;
       height: 100%;
-      background: linear-gradient(60deg, #220e31 10%, #66e8c8 90%);
+      background: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5Rtn_YlXHisoIbwlqUZnG60-VaS8dW1wQxSPDI-lRC713118LUA');
+      background-size: cover;
       }
       .checkbox {
       border-radius: 3px;
@@ -27,6 +28,7 @@
       margin-top: 50px;
       background: transparent;
       font-family: 'Oswald', sans-serif;
+
       }
       .checkbox p {
       width: 140px;
@@ -61,7 +63,7 @@
       margin-right: 15px;
       font-size: 13px;
       padding: 5px 0px 0 25px;
-      color: #000;
+      color: white;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -77,34 +79,44 @@
       input[type=checkbox]:checked + label {
       color: #262626;
       }
+      .box {
+        border: 500px;
+        background: black;
+        opacity: 0.5;
+      }
+      h2 {
+        color: white;
+      }
       </style>
   </head>
 
   <body>
-    <div class="checkbox">
-      <h2>What is your problem?</h2>
-    	<input id="check1" type="checkbox" name="check" value="check1">
-   		<label for="check1">Accounts</label>
-    	<br>
-    	<input id="check2" type="checkbox" name="check" value="check2">
-    	<label for="check2">Device</label>
-    	<br>
-    	<input id="check3" type="checkbox" name="check" value="check3">
-    	<label for="check3">How to use Uber</label>
-    	<br>
-    	<input id="check4" type="checkbox" name="check" value="check4">
-    	<label for="check4">Payment</label>
-    	<br>
-      <input id="check5" type="checkbox" name="check" value="vehicle">
-    	<label for="check5">Vehicle</label>
-    	<br>
-      <form>
-        <input id="check6" type="checkbox" name="check" value="vehicle">
-      	<label for="check6">Other</label>
-         <textarea rows="10" cols="50"></textarea>
-      </form>
-      <a href="buttons"><input type="submit"></a>
-    	<br>
-	</div>
+    <div class="box">
+      <div class="checkbox">
+        <h2>What is your problem?</h2>
+      	<input id="check1" type="checkbox" name="check" value="check1">
+     		<label for="check1">Accounts</label>
+      	<br>
+      	<input id="check2" type="checkbox" name="check" value="check2">
+      	<label for="check2">Device</label>
+      	<br>
+      	<input id="check3" type="checkbox" name="check" value="check3">
+      	<label for="check3">How to use Uber</label>
+      	<br>
+      	<input id="check4" type="checkbox" name="check" value="check4">
+      	<label for="check4">Payment</label>
+      	<br>
+        <input id="check5" type="checkbox" name="check" value="vehicle">
+      	<label for="check5">Vehicle</label>
+      	<br>
+        <form>
+          <input id="check6" type="checkbox" name="check" value="vehicle">
+        	<label for="check6">Other</label>
+           <textarea rows="10" cols="50"></textarea>
+        </form>
+        <a href="buttons"><input type="submit"></a>
+      	<br>
+      </div>
+    </div>
   </body>
 </html>

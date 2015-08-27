@@ -3,6 +3,7 @@
 
 
 <head>
+	<title>Uber</title>
 <style type="text/css">
 	body{
 	font-family: Verdana, Arial, sans-serif;
@@ -67,10 +68,13 @@
 	margin-left: 200px;
 	margin-top: 150px;
 	border: 1px solid black;
+	border-radius: 45px;
 	width: 800px;
 	background: black;
 	color: white;
+  padding: 60px;
 	opacity: 0.6;
+	font-size: 30px;
 
 }
 
@@ -92,15 +96,9 @@
   }
 
 .apptform input[type="text"]{
-<<<<<<< HEAD
 	height:20px;
 	width:220px;
-=======
-	height:20px; 
-	width:220px;
 	color: white;
- 
->>>>>>> e0821808556b23f3b4c2ded9632427accafc5740
 }
 
 .apptform input[type="text"]#apptReason{
@@ -152,6 +150,7 @@
 	width: 800px;
 	padding-bottom: 20px;
 	 color: white;
+	 font-size: 20px;
 
 }
 
@@ -161,7 +160,13 @@
 	width: 900px;
 	padding-bottom: 20px;
 	 color: white;
-
+  font-size: 20px;
+}
+#prefMorn{
+	font-size: 25px;
+}
+#prefMon {
+	font-size: 25px;
 }
 </style>
 </head>
@@ -171,22 +176,8 @@
 <div class="appointment-setup">
 	<h2>Appointment-Set up</h2>
 	<form method="POST" action="/message" class="apptform" name="Appointment Form">
-
-
-<ul>
-
-
-    <li>
-		<label id="prefnoPref">Scheduling Preference</label>
-		<input type="checkbox" name="NOPREFERENCE" value="No preference for time of day or day of week." id="prefnoPref" />I have no preference.
-    </li>
-</ul>
-
-
-  <p><strong>Or select a Preferred Day and Time of Day</strong></p>
-
 	<div id="prefweeks">
-    	<label id="prefMon">Day(s) of Week</label>
+    	<label id="prefMon">Day of Week</label>
 
 		<input type="checkbox" name="MONDAY" value="Monday" id="prefMon" />Monday
 		<input type="checkbox" name="TUESDAY" value="Tuesday" id="prefTues" />Tuesday
@@ -196,7 +187,7 @@
     </div><!-- end div prefweeks -->
 
 	<div id="prefdays">
-    	<label id="prefMorn">Time(s) of Day</label>
+    	<label id="prefMorn">Time of Day</label>
 
 		<input type="checkbox" name="MORNING" value="Morning" id="prefMorn" />Morning
 		<input type="checkbox" name="EARLYAM" value="Early morning" id="prefEarlyAm" />Early morning
