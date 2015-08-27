@@ -1,8 +1,4 @@
 var express = require('express'),
-    exphbs  = require('express3-handlebars'),
-    app = express();
-
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
     exphbs  = require('express-handlebars'),
     mysql = require('mysql'), 
     myConnection = require('express-myconnection'),
@@ -42,8 +38,22 @@ app.get('/login', function (req, res){
 app.get('/appointment', function (req, res){
 	res.render('appointment', {layout: false});
 });
+
 app.get('/buttons', function (req, res){
 	res.render('buttons', {layout: false});
+});
+
+app.get('/guidelines', function (req, res){
+  res.render('guidelines', {layout: false});
+});
+
+app.get('/problems', function (req, res){
+  res.render('problems', {layout: false});
+});
+
+app.get('/thanks', function (req, res){
+  res.render('thanks', {layout: false});
+});
 
 app.get('/register', function (req, res){
 	res.render('register', {layout: false});
@@ -52,5 +62,5 @@ app.get('/register', function (req, res){
 app.get('/page', function (req, res){
 	res.render('page', {layout: false});
 });
-app.listen(3000);
-var port = process.env.BASADI_PORT || 5000;
+var port = process.env.BASADI_PORT || 5000
+app.listen(5000);
