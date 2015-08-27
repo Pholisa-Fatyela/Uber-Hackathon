@@ -81,19 +81,18 @@ button:focus {
 }
 
 </style>
-<form action="appointment" METHOD="POST" enctype=multipart/form-data >
-
-  <h1><img src="img.png" ></img></h1>
+<form autocomplete="off">
+  
+  <h1><img src="public/img.png" ></img></h1>
 	  <div class="line"></div>
 		  <label for="name">Name</label>
 		  <input type="text" id="name">
 		  <label for="surname">Surname</label>
 		  <input type="text" id="surname">
-<<<<<<< HEAD:register.handlebars
+		  <label for="gender">Gender</label>
+		  <input type="text" id="gender">
 		  <label for="idno">Id Number</label>
 		  <input type="text" id="idno">
-=======
->>>>>>> a75ab94bd13b417bda4527e4fc187cef724ed805:views/register.handlebars
 		  <label for="email">Email</label>
 		  <input type="email" id="email">
 		  <label for="phone">Cell Number</label>
@@ -102,18 +101,15 @@ button:focus {
 		  <input type="text" id="licno">
 		  <input type="file" id="uploadme" />
 		  <button>Upload!</button>
-     	<button onclick="myFunction()">Register</button>
+		  <button>Register</button>
+  
 </form>
-
+  
   <script>
      $(function(){
        $('#clickme').click(function(){
         $('#uploadme').click();
        });
      });
-
-     function myFunction() {
-        alert("Thank You for using our App! An Uber agent will contact you shortly to confirm your details and finalise your registration, place an appointment to meet an agent");
-}
   </script>
   </form>
