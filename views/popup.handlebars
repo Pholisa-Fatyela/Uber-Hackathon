@@ -1,27 +1,3 @@
-    <style>
-     dialog {  
-    width: 500px;  
-    background:#e8e8e8;
-    border: 1px solid #dadada;
-    font-family:sans-serif;
-    padding: 5px 10px 20px 20px;
-}  
-    </style>
-
-    <dialog id="window">  
-    <h3>Welcome To Uber!</h3> 
-    <p>Thank you for using our App, Uber agent will contact you shortly to confirm your details and finalise your registration!</p>  
-    <button id="exit">Close</dialog>  
-    <button id="show">Show</button> 
-
- <script>
-    (function() {  
-    var dialog = document.getElementById('window');  
-    document.getElementById('show').onclick = function() {  
-        dialog.show();  
-    };  
-    document.getElementById('exit').onclick = function() {  
-        dialog.close();  
-    };  
-})();
-</script>
+    <div data-role="popup" id="myPopup">
+      <p>Thank you for using our App, Uber agent will contact you shortly to confirm your details and finalise your registration!.</p>
+    </div>
