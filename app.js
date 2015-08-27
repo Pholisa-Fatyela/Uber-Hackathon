@@ -25,7 +25,7 @@ app.get('/page', function (req, res){
 	res.render('page', {layout: false});
 });
 
-var port = process.env.PORT || 5000;
+var port = process.env.BASADI_PORT || 5000;
 
 var server = app.listen(port, function () {
 
